@@ -1,0 +1,151 @@
+.body {
+    background-color: black;
+    color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    .body {
+        background-color: black;
+        color: white;
+    }
+
+    .link-item {border: 1px solid white;}
+
+    .link-item:hover,
+    .link-item-text:hover {
+        color: black;
+        background-color: white;
+    }
+
+    .card {
+        border: 1px solid white!important;
+        background-color: black!important;
+    }
+
+    .card-footer {background-color: #ffffff!important;}
+
+    .project-btn {
+        border: 1px solid black;
+        color: black;
+    }
+
+    .project-btn:hover {
+        color: white;
+        background-color: black;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .body {
+        background-color: white;
+        color: black;
+    }
+
+    .link-item {border: 1px solid black;}
+
+    .link-item:hover,
+    .link-item-text:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .card {
+        border: 1px solid black!important;
+        background-color: white!important;
+    }
+
+    .card-footer {background-color: #000000!important;}
+
+    .project-btn {
+        border: 1px solid white;
+        color: white;
+    }
+
+    .project-btn:hover {
+        color: black;
+        background-color: white;
+    }
+}
+
+#typing-effect, .console-font {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.link-item {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.link-item a, 
+.link-item a:hover,
+.link-item a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card {
+    border-radius: 8px!important;
+}
+
+.card-no-hover:hover {
+    transform: none!important;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-btn {
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    min-width: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-list li {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    min-width: 40px;
+    text-align: center;
+}
